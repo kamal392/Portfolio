@@ -1,0 +1,199 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Navbar*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:grey;
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+    
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+/* Home Section*/
+
+#home{ 
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    right: 0;
+    background: url('wp9641823-front-end-developer-wallpapers.jpg') no-repeat center center /cover ;
+    height:  900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    border: 1 px solid white;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+/* About Section */
+#about {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding:20px;
+    margin-bottom: 10px;
+    background-color:blueviolet;
+    margin-top: 10px;
+   
+}
+
+#pic{
+    display: flex;
+}
+
+#pic img {
+    max-width: 450px;
+    height: auto;
+}
+#intro{
+    display:flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+.intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+/* Work Section*/
+#works{
+
+    display:flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+.project-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.project-links img{
+    width:100%;
+    margin: 10px;
+   
+}
+#contact-details {
+    display:flex;
+    justify-content:space-between;
+    text-align: center;
+    
+}
+#contact{
+  
+    background-color:blueviolet;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 5px;
+
+    
+}
+span{
+    font-weight: bold;
+    font-size: larger;
+    font-size: 34px;
+
+}
+p {
+    font-size: 34px;
+}
+
+
+  
+  @media screen and (max-width:947px) {
+    #contact-details{
+        flex-direction: column;    
+    }
+
+    #pic img{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #pic {
+
+        flex-direction: column;
+    }
+  }
+
+  @media screen and (min-width:800px){
+
+    .project-links img{
+        width: 500px;
+        height: 400px;
+    }
+  }
+     
+
+  @media screen and (max-width:400px){
+
+    .contact-items{
+                   font-size: 10px;
+    }
+  }
+  
+
+
+  
+  
+ 
